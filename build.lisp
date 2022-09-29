@@ -1,0 +1,8 @@
+(ql:quickload "spill")
+(ql:quickload :3d-vectors)
+(use-package :3d-vectors)
+(require 'spill)
+(load "utils.lisp")
+(load "main.lisp")
+(ql:quickload "trivial-dump-core")
+(trivial-dump-core:save-executable "renderer" #'main)
